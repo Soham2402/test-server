@@ -18,7 +18,8 @@ async def test_callback(
     expected_token = "4f8a9d7fbd34c89ea234fa27fbd1c03baf7a7dc6e12f85c3c770a49c3d5e4ccf"
     if not authorization.startswith("Bearer ") or authorization.split(" ")[1] != expected_token:
         raise HTTPException(status_code=401, detail="Unauthorized")
-
+    print(data, flush=True)
+    # print(data.dumps())
     return {
         "message": "Callback received successfully",
         "received_data": data
