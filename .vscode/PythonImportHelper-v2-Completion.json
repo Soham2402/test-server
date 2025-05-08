@@ -1,0 +1,68 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Header",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "CallbackData",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class CallbackData(BaseModel):\n    task_id: str\n    status: int\n    tagged_as: Optional[str] = None\n    validation_message: Optional[str] = None\n@app.post(\"/api/v1/testcallback\")\nasync def test_callback(\n    data: CallbackData,\n    authorization: str = Header(...)\n):",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\nclass CallbackData(BaseModel):\n    task_id: str\n    status: int\n    tagged_as: Optional[str] = None\n    validation_message: Optional[str] = None\n@app.post(\"/api/v1/testcallback\")\nasync def test_callback(\n    data: CallbackData,\n    authorization: str = Header(...)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
